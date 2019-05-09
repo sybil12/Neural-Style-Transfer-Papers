@@ -1,10 +1,18 @@
 # Neural-Style-Transfer-Papers <img class="emoji" alt=":art:" height="30" width="30" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f3a8.png">
 Selected papers, corresponding codes and pre-trained models in our review paper "**[Neural Style Transfer: A Review](https://arxiv.org/abs/1705.04058)**" 
 
+The corresponding OSF repository can be found at: https://osf.io/f8tu4/.
+
 *If I missed your paper in this review, please email me or just pull a request here. I am more than happy to add it. Thanks!*
+
+#### [**The following content will be updated soon after the revision of our manuscript.**]
 
 
 ## *News!*
+
+- [July, 2018] Our paper *Stroke Controllable Fast Style Transfer with Adaptive Receptive Fields* has been accepted by ECCV 2018. Our review will be updated correspondingly.
+
+- [June, 2018] Upload a new version of our paper on arXiv which adds several missing papers (e.g., the work of Wang et al. *ZM-Net: Real-time Zero-shot Image Manipulation Network*).
 
 - [Apr, 2018] We have released a new version of the paper with significant changes at: https://arxiv.org/pdf/1705.04058.pdf </br> Appreciate the feedback!
 
@@ -15,7 +23,7 @@ Selected papers, corresponding codes and pre-trained models in our review paper 
 
 <p align='center'>
     </br>
-    <img src='framework_n3.png' width='1000'>
+    <img src='framework_n5.png' width='1000'>
 </p>
 
 ## Citation 
@@ -29,10 +37,22 @@ If you find this repository useful for your research, please cite
   year={2017}
 }
 ```
+Please also consider citing our ECCV paper:
+
+```
+@inproceedings{jing2018stroke,
+  title={Stroke Controllable Fast Style Transfer with Adaptive Receptive Fields},
+  author={Jing, Yongcheng and Liu, Yang and Yang, Yezhou and Feng, Zunlei and Yu, Yizhou and Tao, Dacheng and Song, Mingli},
+  booktitle={European Conference on Computer Vision},
+  year={2018}
+}
+```
+
+Thanks!
 
 ## Materials corresponding to Our Paper
 
-:white_check_mark: [**Supplementary Materials**](http://yongchengjing.com/pdf/review_supp.pdf)
+:white_check_mark: [**Supplementary Materials**](https://yongchengjing.com/pdf/review_supp_v2.pdf)
 
 :white_check_mark: [**Pre-trained Models**](https://www.dropbox.com/s/37lje23pb75ecob/Models_neuralStyleTransferReview.zip?dl=0)
 
@@ -40,9 +60,9 @@ If you find this repository useful for your research, please cite
 
 ## A Taxonomy of Current Methods
 
-### 1. "Slow" Neural Methods Based On Online Image Optimization
+### 1. Image-Optimisation-Based Online Neural Methods
 
-###  1.1. Parametric "Slow" Neural Methods with Summary Statistics
+###  1.1. Parametric Neural Methods with Summary Statistics
 
 :white_check_mark: [**A Neural Algorithm of Artistic Style**] [[Paper]](https://arxiv.org/pdf/1508.06576.pdf) *(First Neural Style Transfer Paper)*
 
@@ -79,7 +99,7 @@ If you find this repository useful for your research, please cite
 :white_check_mark: [**Stable and Controllable Neural Texture Synthesis and Style Transfer Using Histogram Losses**] [[Paper]](https://arxiv.org/pdf/1701.08893.pdf)
 
 
-###  1.2. Non-parametric "Slow" Neural Methods with MRFs
+###  1.2. Non-parametric Neural Methods with MRFs
 
 :white_check_mark: [**Combining Markov Random Fields and Convolutional Neural Networks for Image Synthesis**] [[Paper]](http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Li_Combining_Markov_Random_CVPR_2016_paper.pdf)  *(CVPR 2016)*
 
@@ -88,10 +108,11 @@ If you find this repository useful for your research, please cite
 *   [Torch-based](https://github.com/chuanli11/CNNMRF)
 
 
+:white_check_mark: [**Arbitrary Style Transfer with Deep Feature Reshuffle**] [[Paper]](https://arxiv.org/pdf/1805.04103.pdf)  *(CVPR 2018)*
 
-###  2. "Fast" Neural Methods Based On Offline Model Optimization
+###  2. Model-Optimisation-Based Offline Neural Methods
 
-### 2.1. Per-Style-Per-Model "Fast" Neural Methods
+### 2.1. Per-Style-Per-Model Neural Methods
 
 
 :white_check_mark: [**Perceptual Losses for Real-Time Style Transfer and Super-Resolution**] [[Paper]](https://arxiv.org/pdf/1603.08155.pdf)  *(ECCV 2016)*
@@ -125,7 +146,7 @@ If you find this repository useful for your research, please cite
 
 
 
-### 2.2. Multiple-Style-Per-Model "Fast" Neural Methods
+### 2.2. Multiple-Style-Per-Model Neural Methods
 
 :white_check_mark: [**A Learned Representation for Artistic Style**] [[Paper]](https://arxiv.org/pdf/1610.07629.pdf)  *(ICLR 2017)*
 
@@ -150,7 +171,7 @@ If you find this repository useful for your research, please cite
 
 
 
-### 2.3. Arbitrary-Style-Per-Model "Fast" Neural Methods
+### 2.3. Arbitrary-Style-Per-Model Neural Methods
 
 :white_check_mark: [**Fast Patch-based Style Transfer of Arbitrary Style**] [[Paper]](https://arxiv.org/pdf/1612.04337.pdf) 
 
@@ -179,13 +200,23 @@ If you find this repository useful for your research, please cite
 
 *   [Torch-based](https://github.com/Yijunmaverick/UniversalStyleTransfer)
 *   [TensorFlow-based](https://github.com/eridgd/WCT-TF)
-*   [PyTorch-based](https://github.com/sunshineatnoon/PytorchWCT)
+*   [PyTorch-based #1](https://github.com/sunshineatnoon/PytorchWCT)
+*   [PyTorch-based #2](https://github.com/pietrocarbo/deep-transfer)
 
-:white_check_mark: [**Meta Networks for Neural Style Transfer**] [[Paper]](https://arxiv.org/pdf/1709.04111.pdf)
+:white_check_mark: [**Meta Networks for Neural Style Transfer**] [[Paper]](https://arxiv.org/pdf/1709.04111.pdf)  *(CVPR 2018)*
 
 :sparkle: **Code:**
 
 *   [Caffe-based](https://github.com/FalongShen/styletransfer)
+
+:white_check_mark: [**ZM-Net: Real-time Zero-shot Image Manipulation Network**] [[Paper]](https://arxiv.org/pdf/1703.07255.pdf)
+
+:white_check_mark: [**Avatar-Net: Multi-Scale Zero-Shot Style Transfer by Feature Decoration**] [[Paper]](http://openaccess.thecvf.com/content_cvpr_2018/CameraReady/0137.pdf)  *(CVPR 2018)*
+
+:sparkle: **Code:**
+
+*   [TensorFlow-based](https://github.com/LucasSheng/avatar-net)
+
 
 ## Improvements and Extensions
 
@@ -209,7 +240,7 @@ If you find this repository useful for your research, please cite
 
 *   [Torch-based](https://github.com/alexjc/neural-doodle)
 
-:white_check_mark: [**The Contextual Loss for Image Transformation with Non-Aligned Data**] [[Paper]](https://arxiv.org/pdf/1803.02077)
+:white_check_mark: [**The Contextual Loss for Image Transformation with Non-Aligned Data**] [[Paper]](https://arxiv.org/pdf/1803.02077)   *(ECCV 2018)* 
 
 :sparkle: **Code:**
 
@@ -227,13 +258,15 @@ If you find this repository useful for your research, please cite
 
 *   [Torch-based](https://github.com/DmitryUlyanov/texture_nets)
 
+:white_check_mark: [**A Style-Aware Content Loss for Real-time HD Style Transfer**] [[Paper]](https://arxiv.org/pdf/1807.10201)  *(ECCV 2018)* 
+
 :white_check_mark: [**Multimodal Transfer: A Hierarchical Deep Convolutional Neural Network for Fast Artistic Style Transfer**] [[Paper]](https://arxiv.org/pdf/1612.01895.pdf)  *(CVPR 2017)* 
 
 :sparkle: **Code:**
 
 *   [TensorFlow-based](https://github.com/fullfanta/multimodal_transfer)
 
-:white_check_mark: [**Stroke Controllable Fast Style Transfer with Adaptive Receptive Fields**] [[Paper]](https://arxiv.org/pdf/1802.07101.pdf) 
+:white_check_mark: [**Stroke Controllable Fast Style Transfer with Adaptive Receptive Fields**] [[Paper]](https://arxiv.org/pdf/1802.07101.pdf)  *(ECCV 2018)* 
 
 :sparkle: **Code:**
 
@@ -272,6 +305,8 @@ If you find this repository useful for your research, please cite
 
 :white_check_mark: [**Real-Time Neural Style Transfer for Videos**] [[Paper]](http://openaccess.thecvf.com/content_cvpr_2017/papers/Huang_Real-Time_Neural_Style_CVPR_2017_paper.pdf)  *(CVPR 2017)* 
 
+:white_check_mark: [**A Common Framework for Interactive Texture Transfer**] [[Paper]](http://www.icst.pku.edu.cn/F/zLian/papers/CVPR18-Men.pdf)  *(CVPR 2018)*
+
 :white_check_mark: [**Deep Photo Style Transfer**] [[Paper]](https://arxiv.org/pdf/1703.07511.pdf)  *(CVPR 2017)*
 
 
@@ -280,7 +315,7 @@ If you find this repository useful for your research, please cite
 *   [Torch-based](https://github.com/luanfujun/deep-photo-styletransfer)
 *   [TensorFlow-based](https://github.com/LouieYang/deep-photo-styletransfer-tf)
 
-:white_check_mark: [**A Closed-form Solution to Photorealistic Image Stylization**] [[Paper]](https://arxiv.org/pdf/1802.06474.pdf)
+:white_check_mark: [**A Closed-form Solution to Photorealistic Image Stylization**] [[Paper]](https://arxiv.org/pdf/1802.06474.pdf)  *(ECCV 2018)* 
 
 :sparkle: **Code:**
 
@@ -322,6 +357,8 @@ If you find this repository useful for your research, please cite
 *   [Torch-based](https://github.com/luanfujun/deep-painterly-harmonization)
 
 :white_check_mark: [**Fast Face-Swap Using Convolutional Neural Networks**] [[Paper]](http://openaccess.thecvf.com/content_ICCV_2017/papers/Korshunova_Fast_Face-Swap_Using_ICCV_2017_paper.pdf)  *(ICCV 2017)*
+
+:white_check_mark: [**Learning Selfie-Friendly Abstraction from Artistic Style Images**] [[Paper]]()  *(ACML 2018)*
 
 
 ## Application
@@ -365,3 +402,11 @@ If you find this repository useful for your research, please cite
 :white_check_mark: [**Issue of Layer Chosen Strategy**][http://yongchengjing.com/pdf/Issue_layerChosenStrategy_neuralStyleTransfer.pdf]
 
 :white_check_mark: [**Picking an optimizer for Style Transfer**][https://blog.slavv.com/picking-an-optimizer-for-style-transfer-86e7b8cba84b]
+
+## To be classified
+
+:white_check_mark: [**Conditional Fast Style Transfer Network**] [[Paper]](http://img.cs.uec.ac.jp/pub/conf17/170612yanai_0.pdf)
+
+:white_check_mark: [**Unseen Style Transfer Based on a Conditional Fast Style Transfer Network**] [[Paper]](https://openreview.net/forum?id=H1Y7-1HYg&noteId=H1Y7-1HYg)
+
+:white_check_mark: [**DeepStyleCam: A Real-time Style Transfer App on iOS**] [[Paper]](http://img.cs.uec.ac.jp/pub/conf16/170103tanno_0.pdf)
